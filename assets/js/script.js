@@ -48,5 +48,4 @@ function playGame(playerChoice) {
             computerScoreDisplay.textContent = computerScore;
             break;
     }
-    console.log(result);
 }
