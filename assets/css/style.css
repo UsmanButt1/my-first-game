@@ -12,8 +12,22 @@ h1 {
     color: coral;
 }
 
+.characters {
+    margin-bottom: 30px;
+}
+
 .choices {
     margin-bottom: 30px;
+}
+
+.characters button {
+    font-size: 5rem;
+    min-width: 100px;
+    margin: 0 10px;
+    border-radius: 100px;
+    background-color: hsl(200, 55%, 70%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
 .choices button {
@@ -24,6 +38,10 @@ h1 {
     background-color: hsl(200, 100%, 50%);
     cursor: pointer;
     transition: background-color 0.5s ease;
+}
+
+.characters button:hover {
+    background-color: hsl(200, 75%, 80%);
 }
 
 .choices button:hover {

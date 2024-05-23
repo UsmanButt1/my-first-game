@@ -8,6 +8,16 @@ const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
+let playerOne = 0;
+
+const phrasesPenny = ["Penny", "Hello", "Hi"];
+const phrasesSheldon = ["Sheldon", "Howdy", "Cuba"];
+
+function setCharacter(characterChoice) {
+    playerOne = characterChoice;
+    //const phrases = eval("phrases"+characterChoice);
+    //console.log(playerOne + ": " + phrases[Math.floor(Math.random() * 3)]);
+}
 
 function playGame(playerChoice) {
 
@@ -47,5 +57,10 @@ function playGame(playerChoice) {
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
             break;
+    }
+
+    if (playerScore === 5) {
+        const phrases = eval("phrases"+playerOne);
+        resultDisplay.textContent = (playerOne + ": " + phrases[Math.floor(Math.random() * 3)]);
     }
 }
